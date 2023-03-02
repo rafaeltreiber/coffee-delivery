@@ -1,11 +1,14 @@
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { Main } from './components/Main';
+import { Router } from './Router';
 import { defaultTheme } from './styles/themes/default';
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Main />;
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
