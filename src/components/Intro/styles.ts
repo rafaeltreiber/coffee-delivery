@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const TotalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+export const AdvertiseContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +12,6 @@ export const Container = styled.div`
   width: 1440px;
   height: 544px;
 
-  /* gap: 376px; */
   padding: 0 160px;
 
   /* background-image: url("Background.png"); */
@@ -32,7 +35,7 @@ export const Title = styled.div`
 export const BoldTitle = styled.text`
   font-family: "Baloo 2", sans-serif;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 62.4px;
 `;
 

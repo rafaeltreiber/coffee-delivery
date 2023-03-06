@@ -1,3 +1,13 @@
+import { CoffeeCard } from "./CoffeeCard";
+import { Container, OurCoffees } from "./styles";
+
 export function CoffeeeList() {
-  return <h1>Coffee list</h1>;
+  return (
+    <Container>
+      <OurCoffees>
+        Nossos cafés
+      </OurCoffees>
+      <CoffeeCard />
+    </Container>
+  )
 }
