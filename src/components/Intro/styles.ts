@@ -32,14 +32,14 @@ export const Title = styled.div`
   height: 192px;
 `;
 
-export const BoldTitle = styled.text`
+export const BoldTitle = styled.span`
   font-family: "Baloo 2", sans-serif;
   font-size: 48px;
   font-weight: 800;
   line-height: 62.4px;
 `;
 
-export const AdvertiseText = styled.text`
+export const AdvertiseText = styled.span`
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -55,7 +55,7 @@ export const Items = styled.div`
   gap: 20px;
 `;
 
-export const ExplanationText = styled.text`
+export const ExplanationText = styled.span`
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
