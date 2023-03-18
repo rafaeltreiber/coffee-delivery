@@ -18,6 +18,8 @@ export const ChipsContainer = styled.div`
   justify-content: center;
 
   padding-top: 8px;
+
+  gap: 8px;
 `;
 
 export const Name = styled.span`

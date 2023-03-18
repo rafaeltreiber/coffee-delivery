@@ -6,6 +6,9 @@ export const ChipContainer = styled.div`
   align-items: center;
 
   font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 130%;
 
   text-transform: uppercase;
 
