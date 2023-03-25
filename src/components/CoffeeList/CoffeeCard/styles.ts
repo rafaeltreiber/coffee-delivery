@@ -64,18 +64,25 @@ export const CurrencyValueContainer = styled.div`
 
   line-height: 130%;
   color: #574f4d;
+
+  width: 67px;
+  height: 31px;
 `;
 
 export const Currency = styled.span`
-  font-family: "Roboto", sans-serif;
+  font-family: "Baloo2", sans-serif;
   font-size: 14px;
   font-weight: 400;
+
+  line-height: 18.2px;
 `;
 
 export const Value = styled.span`
-  font-family: "Baloo2", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 800;
+
+  line-height: 31.2px;
 `;
 
 export const AmountCartContainer = styled.div`

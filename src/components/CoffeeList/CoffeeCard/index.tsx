@@ -66,7 +66,7 @@ export function CoffeeCard({ image, tags, name, description }: CoffeeCardProps) 
       <ChipsContainer>
         {
           tags.map((tag) => (
-            <Chip text={tag} />
+            <Chip text={tag} key={tag} />
           ))
         }
       </ChipsContainer>

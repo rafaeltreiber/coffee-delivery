@@ -1,4 +1,4 @@
-import { AdvertiseContainer, AdvertiseText, BoldTitle, ExplanationText, IcontextContainer, IconTextLine, Imagem, Items, LeftSideContainer, LeftSideItems, RightSideContainer, Title, TotalContainer } from "./styles";
+import { AdvertiseContainer, AdvertiseText, BoldTitle, ExplanationText, IcontextContainer, IconTextLine, Imagem, Items, LeftSideContainer, LeftSideItems, RightSideContainer, Title, IntroContainer, BackgroundContainer } from "./styles";
 import SimpleBuy from '../../../public/img/SimpleBuy.svg'
 import Package from '../../../public/img/Package.svg'
 import FastDelivery from '../../../public/img/FastDelivery.svg'
@@ -8,7 +8,10 @@ import { CoffeeeList } from "../CoffeeList";
 
 export function Intro() {
   return (
-    <TotalContainer>
+    <IntroContainer>
+      <BackgroundContainer>
+      </BackgroundContainer>
+
       <AdvertiseContainer>
         <LeftSideItems>
           <Title>
@@ -57,8 +60,10 @@ export function Intro() {
         </Imagem>
       </AdvertiseContainer>
 
+
+
       <CoffeeeList />
 
-    </TotalContainer>
+    </IntroContainer>
   )
 }

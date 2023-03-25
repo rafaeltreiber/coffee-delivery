@@ -1,25 +1,40 @@
 import styled from "styled-components";
 
-export const TotalContainer = styled.div`
+export const IntroContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
+
+  width: 1440px;
+  height: 544px;
 `;
+
 export const AdvertiseContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  width: 1440px;
-  height: 544px;
-
   padding: 0 160px;
 
-  /* background-image: url("Background.png"); */
+  z-index: 10;
+`;
+
+export const BackgroundContainer = styled.div`
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("/Background.png");
+  filter: blur(80px);
+
+  z-index: 20;
 `;
 
 export const LeftSideItems = styled.div`
   display: flex;
   flex-direction: column;
+
   gap: 80px;
 `;
 
@@ -30,6 +45,8 @@ export const Title = styled.div`
 
   width: 588px;
   height: 192px;
+
+  padding-top: 94px;
 `;
 
 export const BoldTitle = styled.span`
@@ -52,6 +69,7 @@ export const Items = styled.div`
 
   display: flex;
   flex-direction: column;
+
   gap: 20px;
 `;
 

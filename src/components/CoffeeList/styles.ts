@@ -5,7 +5,7 @@ export const CoffeeListContainer = styled(Box)`
   width: 1440px;
   height: 1645px;
 
-  padding: 0 160px;
+  padding: 128px 160px 157px 160px;
 `;
 
 export const OurCoffeesWrapper = styled.div`
