@@ -1,10 +1,14 @@
-import { CoffeeSelectionContainer } from "./styles";
+import { CoffeeDetails } from "./CoffeeDetails";
+import { CoffeeSelectionContainer, Divider } from "./styles";
 
 export function CoffeeSelection() {
   return (
     <CoffeeSelectionContainer>
-      Coffee Selection
-
+      <CoffeeDetails name="Expresso Tradicional" />
+      <Divider />
+      <CoffeeDetails name="Latte" />
+      <Divider />
+      <Divider />
     </CoffeeSelectionContainer>
   )
 }

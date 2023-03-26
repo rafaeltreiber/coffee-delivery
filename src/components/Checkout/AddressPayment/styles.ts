@@ -8,8 +8,6 @@ export const AddressPaymentContainer = styled.div`
   flex-direction: column;
 
   gap: 12px;
-
-  border: 1px solid;
 `;
 
 export const AddressWrapper = styled.div`
@@ -17,6 +15,8 @@ export const AddressWrapper = styled.div`
   height: 372px;
 
   background: #f3f2f2;
+
+  border-radius: 6px;
 `;
 
 export const PaymentWrapper = styled.div`
@@ -24,9 +24,11 @@ export const PaymentWrapper = styled.div`
   height: 207px;
 
   background: #f3f2f2;
+
+  border-radius: 6px;
 `;
 
-export const AddressHeader = styled.div`
+export const Header = styled.div`
   width: 560px;
   height: 44px;
 
@@ -66,4 +68,77 @@ export const HeaderIconWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+`;
+
+export const FormWrapper = styled.div`
+  width: 560px;
+  height: 216px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 40px;
+
+  gap: 16px;
+`;
+
+export const AddressForm = styled.form``;
+
+export const LineWrapper = styled.div`
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+`;
+
+export const InputField = styled.input`
+  display: flex;
+  align-items: center;
+
+  padding: 12px;
+
+  background: #eeeded;
+
+  border: 1px solid #e6e5e5;
+  border-radius: 4px;
+`;
+
+export const CardTypesWrappper = styled.div`
+  display: flex;
+
+  gap: 12px;
+
+  margin: 0 40px;
+`;
+
+export const PaymentTypeButton = styled.button`
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 16px;
+  gap: 12px;
+
+  background: #e6e5e5;
+  border-radius: 6px;
+
+  border: none;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+
+  text-transform: uppercase;
+
+  color: #574f4d;
+
+  cursor: pointer;
+`;
+
+export const ButtonIcon = styled.img`
+  width: 16px;
+  height: 16px;
 `;

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface AmountSelectorContainerProps {
+  smallSize: boolean;
+}
+
 export const AmountSelectorContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -9,13 +13,13 @@ export const AmountSelectorContainer = styled.div`
   border-radius: 6px;
 `;
 
-export const CounterWrapper = styled.div`
+export const CounterWrapper = styled.div<AmountSelectorContainerProps>`
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 72px;
-  height: 38px;
+  height: ${(props) => (props.smallSize ? "32px" : "38px")};
 
   gap: 4px;
 `;
