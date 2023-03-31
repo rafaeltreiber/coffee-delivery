@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CoffeeDetailContainer = styled.div`
+export const CoffeeDetailsContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
@@ -8,7 +8,10 @@ export const CoffeeDetailContainer = styled.div`
   line-height: 130%;
   color: #574f4d;
 
-  padding: 8px 4px;
+  width: 368px;
+  height: 80px;
+
+  padding: 24px 40px;
 `;
 
 export const CoffeeInfoWrapper = styled.div`

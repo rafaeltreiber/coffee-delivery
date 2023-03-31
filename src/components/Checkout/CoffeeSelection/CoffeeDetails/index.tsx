@@ -1,4 +1,4 @@
-import { ButtonIcon, CoffeeDetailContainer, CoffeeEditionTools, CoffeeInfo, CoffeeInfoWrapper, CoffeeName, CoffeePriceWrapper, PriceInfo, RemoveButton } from "./styles";
+import { ButtonIcon, CoffeeDetailsContainer, CoffeeEditionTools, CoffeeInfo, CoffeeInfoWrapper, CoffeeName, CoffeePriceWrapper, PriceInfo, RemoveButton } from "./styles";
 
 import { AmountSelector } from "../../../CoffeeList/CoffeeCard/AmountSelector";
 
@@ -60,22 +60,25 @@ export function CoffeeDetails({ name }: CoffeeDetailsProps) {
 
 
   return (
-    <CoffeeDetailContainer>
+    <CoffeeDetailsContainer>
       <CoffeeInfoWrapper>
         <img src={GetSVGFromString(name)} />
+
         <CoffeeInfo>
           <CoffeeName>{name}</CoffeeName>
           <CoffeeEditionTools>
             <AmountSelector smallSize />
             <RemoveButton><ButtonIcon src={TrashcanIcon} />Remover</RemoveButton>
           </CoffeeEditionTools>
+
         </CoffeeInfo>
       </CoffeeInfoWrapper>
+
       <CoffeePriceWrapper>
         <PriceInfo>R$ 9,90</PriceInfo>
 
       </CoffeePriceWrapper>
-    </CoffeeDetailContainer>
+    </CoffeeDetailsContainer>
   )
 
 }
